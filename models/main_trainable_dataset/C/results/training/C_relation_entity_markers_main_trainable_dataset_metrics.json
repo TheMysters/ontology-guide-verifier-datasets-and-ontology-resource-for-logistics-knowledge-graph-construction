@@ -1,0 +1,111 @@
+{
+  "format": "C_relation_entity_markers",
+  "model_name": "bert-base-uncased",
+  "data_root": "/content/ontology_workspace/ontology-improvements/generated/balanced_mixed_verifier_v4_c_rewarded",
+  "epochs": 4,
+  "batch_size": 32,
+  "max_len": 96,
+  "seed": 42,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5812344021267362,
+      "val_loss": 0.40818894654512405,
+      "val": {
+        "accuracy": 0.786,
+        "precision": 0.8294930875576036,
+        "recall": 0.72,
+        "f1": 0.7708779443254817,
+        "tp": 180,
+        "tn": 213,
+        "fp": 37,
+        "fn": 70,
+        "support": 500
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.27137674604143414,
+      "val_loss": 0.5827719196677208,
+      "val": {
+        "accuracy": 0.786,
+        "precision": 0.8557213930348259,
+        "recall": 0.688,
+        "f1": 0.762749445676275,
+        "tp": 172,
+        "tn": 221,
+        "fp": 29,
+        "fn": 78,
+        "support": 500
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.18785825229826428,
+      "val_loss": 0.5174617767333984,
+      "val": {
+        "accuracy": 0.824,
+        "precision": 0.8820754716981132,
+        "recall": 0.748,
+        "f1": 0.8095238095238094,
+        "tp": 187,
+        "tn": 225,
+        "fp": 25,
+        "fn": 63,
+        "support": 500
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.13884547021653917,
+      "val_loss": 0.7166444361209869,
+      "val": {
+        "accuracy": 0.8,
+        "precision": 0.9213483146067416,
+        "recall": 0.656,
+        "f1": 0.7663551401869159,
+        "tp": 164,
+        "tn": 236,
+        "fp": 14,
+        "fn": 86,
+        "support": 500
+      }
+    }
+  ],
+  "train_loss": 0.14100458472967148,
+  "val_loss": 0.5174617767333984,
+  "test_loss": 0.4956958293914795,
+  "train": {
+    "accuracy": 0.9545,
+    "precision": 0.916590284142988,
+    "recall": 1.0,
+    "f1": 0.9564801530368244,
+    "tp": 1000,
+    "tn": 909,
+    "fp": 91,
+    "fn": 0,
+    "support": 2000
+  },
+  "val": {
+    "accuracy": 0.824,
+    "precision": 0.8820754716981132,
+    "recall": 0.748,
+    "f1": 0.8095238095238094,
+    "tp": 187,
+    "tn": 225,
+    "fp": 25,
+    "fn": 63,
+    "support": 500
+  },
+  "test": {
+    "accuracy": 0.784,
+    "precision": 0.8380952380952381,
+    "recall": 0.704,
+    "f1": 0.7652173913043478,
+    "tp": 176,
+    "tn": 216,
+    "fp": 34,
+    "fn": 74,
+    "support": 500
+  }
+}

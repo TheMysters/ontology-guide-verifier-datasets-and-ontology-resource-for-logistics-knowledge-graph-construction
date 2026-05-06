@@ -1,0 +1,100 @@
+The reference column stores the internal product reference used by warehouse operators.
+The article code is the product reference that links purchase records to stock records.
+When two labels differ, the product reference remains the stable product identifier.
+Legacy files may call the product reference an internal article number.
+The barcode is mentioned only as packaging text, not as a product reference.
+The designation field contains the product designation shown to purchasing teams.
+A designation can include supplier wording without changing the product reference.
+The commercial label should be kept as the product designation.
+The designation describes the item but does not identify the supplier.
+The file mentions descriptive text, but no explicit product designation is provided.
+The family code groups each product into a broader product family.
+Brake pads belong to a product family used for reporting.
+The family label is stored separately from the product designation.
+A product family should be attached when the file gives the family code.
+The word family appears in a supplier comment but no product family is assigned.
+The subfamily code refines the product family with a product subfamily.
+A product can belong to a product subfamily even when the family name is abbreviated.
+The subfamily label should create a belongs-to-subfamily relation.
+Subfamily 13 is the specific category below the family code.
+The text compares two subfamilies but does not assign the product to either one.
+The purchase unit tells how many pieces are bought from the supplier at once.
+A purchase unit of ten means procurement orders the product in packs of ten.
+The buying quantity is represented as the purchase unit.
+Purchase unit and sales unit are separate commercial quantities.
+The supplier name appears near the purchase unit but should not create a supplied-by relation.
+The sales unit tells how many pieces are sold to customers.
+A sales unit of one means the product is sold individually.
+The customer-facing packaging quantity is the sales unit.
+The word unit refers to the sales unit, not to kilograms or millimetres.
+The document says units were reviewed, but no sales unit value is stated.
+Current stock quantity records how many pieces are available in the warehouse.
+The stock-on-hand column corresponds to current stock quantity.
+Operations update current stock quantity after each movement.
+A zero in stock means the current stock quantity is zero.
+The sentence discusses stock policy but gives no current stock quantity.
+Annual demand is estimated from the units consumed during the last year.
+The demand column stores annual demand for each product.
+Planning uses annual demand to size replenishment rules.
+The calendar-year demand should be mapped to annual demand.
+Demand is mentioned as a concept, but no annual demand value is present.
+Rolling annual demand uses the last twelve months instead of the calendar year.
+The rolling annual demand column smooths seasonal peaks.
+A product may have both annual demand and rolling annual demand.
+The last twelve months consumption is the rolling annual demand.
+The report rolls demand forward, but it does not state a rolling annual demand field.
+The supplier code is the identifier assigned by the supplier.
+Procurement keeps the supplier code next to the product reference.
+A supplier code is not the same as a manufacturer reference.
+The external vendor identifier should be stored as supplier code.
+The word supplier appears in a note, but no supplier code is given.
+The manufacturer reference is the code used by the manufacturer.
+A manufacturer reference can differ from the supplier code.
+Technical drawings list the manufacturer reference for each product.
+The OEM part number should be kept as manufacturer reference.
+The manufacturer is named, but no manufacturer reference value is shown.
+The supplier field identifies the company that supplies the product.
+A distributor may supply a product without manufacturing it.
+The product is supplied by supplier S04.
+Supplier information should create a supplied-by relation.
+Supplier wording in the designation should not create a supplied-by relation.
+The manufacturer field identifies who manufactured the product.
+A product manufactured by Bosch should link to a manufacturer.
+Manufacturer information should not be confused with the supplier.
+The item is manufactured by a brand but sold by a distributor.
+The sentence mentions manufacturing constraints but no manufacturer entity.
+Dimensions are expressed in millimetres for every product box.
+Length, width, and height use millimetres by default.
+Historical dimensions were maintained in centimetres.
+Dimension measurements should keep the unit separate from the numeric value.
+The package dimension note mentions millimetres but not a product size value.
+Weight values are recorded in kilograms in the product master.
+Small parts may have their weight expressed in grams.
+The default unit for weight measurement is kilogram.
+The text compares kilograms and grams without assigning a default weight unit.
+Weight measurement keeps the unit separate from the numeric mass.
+Product length should be represented through a length measurement node.
+The recorded width should create a width measurement for the product.
+The height column should create a height measurement for the product.
+Length, width, and height are all explicit dimension measurements.
+The dimensions describe the packed box, not the bare product.
+A width measurement is a kind of dimension measurement.
+A height measurement is a kind of dimension measurement.
+A length measurement is a kind of dimension measurement.
+A weight measurement is a kind of measurement.
+The text says measurement several times but makes no subclass statement.
+The product is stored in bin B17 in the warehouse.
+Location notes should not be interpreted as manufacturer information.
+The extraction should ignore candidate triples that are not expressed in the sentence.
+A supplier can appear in a sentence about purchase unit without being the object of supplied by.
+A manufacturer can appear in a sentence about manufacturer reference without being a manufactured-by assertion.
+The family and subfamily values may both be present in the same row.
+The product reference and designation can both appear in the same record.
+Current stock and annual demand are different quantities.
+Rolling annual demand should not overwrite the current stock quantity.
+Supplier code, supplier company, and product reference are three different fields.
+Manufacturer reference and manufacturer company should be stored separately.
+Dimension units in millimetres should not be mixed with weight units in kilograms.
+A product family comment can mention suppliers without changing the family assignment.
+A stock quantity comment can mention annual demand without giving an annual demand value.
+The benchmark sentence mentions product, unit, supplier, and family only as vocabulary examples.

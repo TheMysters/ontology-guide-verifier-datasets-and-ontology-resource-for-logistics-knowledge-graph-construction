@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#models too large for github...
+models/main_trainable_dataset/C/models/C_relation_entity_markers_main_trainable_dataset/model.safetensors
